@@ -1,4 +1,5 @@
-const apiKey = "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"
+const apiKey = "sk-mResvqlOUwArai0KXvjIT3BlbkFJqxn4jHH4W57JIMMghGx"
+const serverless = require('serverless-http');
 const { Configuration, OpenAIApi } = require("openai");
 const express = require('express')
 var cors = require('cors')
@@ -9,12 +10,12 @@ const configuration = new Configuration({
   });
   const openai = new OpenAIApi(configuration);
 
-//cors 이슈 해결
-// let corsOptions = {
-//     origin: 'https://www.domain.com',
-//     credentials: true
-// }
-app.use(cors());
+// cors 이슈 해결
+let corsOptions = {
+    origin: 'https://chatcooker.pages.dev',
+    credentials: true
+}
+app.use(cors(corsOptions));
 
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
@@ -52,6 +53,6 @@ app.post('/recipeTell', async function (req, res) {
     // console.log(recipe);   
     res.json({"assistant":recipe});
   });
-app.listen(3000)
 
-
+module.exports.handler = serverless(app);
+// app.listen(3000)
