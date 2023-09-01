@@ -3,6 +3,11 @@
 
 Recipe 웹 애플리케이션은 백엔드와 프론트엔드 부분으로 구성된 레시피 추천 서비스입니다. 이 웹 애플리케이션은 사용자가 원하는 칼로리와 다이어트 여부를 입력하면 레시피를 추천해줍니다.
 
+![recipe](https://github.com/auspicious0/recipe_frontend/assets/108572025/ac59728c-0c75-40d8-aa16-f664d265949c)
+
+![recipe_answer](https://github.com/auspicious0/recipe_frontend/assets/108572025/5fe8ffe0-0757-42b1-bb43-bd9860192008)
+
+
 ## 프론트엔드
 프론트엔드는 HTML, JavaScript, CSS로 개발되었으며, 사용자와의 상호작용을 담당합니다. 사용자는 원하는 칼로리와 다이어트 여부를 선택한 후 "오늘의 식단 보기" 버튼을 클릭하여 레시피 추천을 시작할 수 있습니다. 추천된 레시피는 채팅 화면에 표시되며, 사용자와의 대화 형식으로 이루어집니다.
 
@@ -25,4 +30,4 @@ Recipe 웹 애플리케이션은 백엔드와 프론트엔드 부분으로 구�
 
 
 ### 문의
-프로젝트에 관한 문의나 버그 리포트는 [이슈 페이지](https://github.com/auspicious0/recipe_backend/issues)를 통해 제출해주세요.
+프로젝트에 관한 문의나 버그 리포트는 [이슈 페이지](https://github.com/auspicious0/recipe_frontend/issues)를 통해 제출해주세요.
